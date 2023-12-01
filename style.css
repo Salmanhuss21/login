@@ -1,0 +1,120 @@
+body{
+    height: 100vh;
+    margin : 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('bg.jpg');
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 450px;
+    height: 450px;
+    max-width: 650px;
+    max-height: 750px;
+    margin: 150px 50px 150px 100px;
+    background-color: rgba(0, 0, 0, 0.687);
+    backdrop-filter: blur(3px);
+    border-radius: 40px;
+}
+
+.login{
+    align-content: center;
+    text-align: center;
+}
+
+.login h2{
+    color: #f7f7f7;
+    font-family: Helvetica;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 60px;
+}
+
+.login #name, #pwd{
+    width: 80%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.598);
+    color: rgb(38, 38, 38);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px;
+    font-size: 16px;
+    font-family: Verdana;
+    font-weight: 540;
+}
+
+.remember{
+    margin-right: 40%;
+}
+
+.remember label{
+    color: rgba(194, 194, 194, 0.886);   
+}
+
+.help{
+    margin-top: -4%;
+    margin-left: 60%;
+}
+
+.help a{
+    text-decoration: none;
+    color: rgba(266, 0, 0);
+    font-size: medium;
+    font-weight: 500;
+}
+
+.help a:hover{
+    color: rgb(255, 97, 97);
+}
+
+.new{
+    margin-right: 18%;
+    font-size: 15px;
+}
+
+.new p{
+    color: rgba(194, 194, 194, 0.886);  
+    font-family: Verdana;
+}
+
+.new a{
+    text-decoration: none;
+    color: rgba(266, 0, 0);
+}
+
+.login button{
+    width: 80%;
+    height: 40px;
+    background-color: rgb(124, 3, 3);
+    color: #f7f7f7;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: Verdana;
+    font-weight: 540;
+}
+
+.login button:hover{
+    background-color:  rgb(174, 7, 7)
+}
+
+@media (max-width: 550px){
+
+    .main{
+        width: 650px;
+        height: 750px;
+    }
+}

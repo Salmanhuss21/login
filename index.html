@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Screener | Login</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    </head>
+
+<body>
+    <div class="main">
+        <form>
+        <div class="login">
+            <h2>Login</h2>
+            <input type="text" id="name" placeholder="Usermame" required=""><br>
+            <input type="password"  id="pwd" placeholder="Password" maxlength="9" required="">
+            <button onclick="login()">Login</button><br>
+
+            <div class="remember">
+            <input type="checkbox" id="check">
+            <label for="check">Remember me.</label>
+            </div>
+
+            <div class="help">
+                <a href="#">Need Help?</a>
+            </div>
+
+            <div class="new">
+                <p>New to screener? <a href="#">Register Now!</a></p>
+            </div>
+        </div>
+    </form>
+    </div>
+
+
+<script type="text/javascript">
+    function login()
+{
+    var username=document.getElementById('name').value;
+    var password=document.getElementById('pwd').value;
+
+    if(username=="admin" && password=="admin123" ){
+        window.open("home/index.html","_blank");
+    }
+
+    else{
+        alert("Wrong username or password");
+    }
+}
+</script>
+</body>
+</html>
